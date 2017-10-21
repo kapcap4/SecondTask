@@ -83,6 +83,41 @@ public class Main {
         System.out.println("Тип float <-- int " + "[" + f3 + "]");
         double f4 = l;
         System.out.println("Тип double <-- long " + "[" + f4 + "]");
+        System.out.println("");
+
+        // Разные системы счисления
+        System.out.println("******************" + "Разные системы счисления" + "******************");
+        System.out.println("");
+        int bin = 4;
+        int oct = 9;
+        int hex = 10;
+        // В двоичном виде выглядит так
+        System.out.println("Из десятичного в двоичный");
+        System.out.println("Число " + "[" + bin + "]" + " в двоичном виде " + "[" + Integer.toBinaryString(bin) + "]");
+        System.out.println("Число " + "[" + oct + "]" + " в восьмеричном виде " + "[" + Integer.toOctalString(oct) + "]");
+        System.out.println("Число " + "[" + hex + "]" + " в шестнадцатиричном виде " + "[" + Integer.toHexString(hex) + "]");
+        System.out.println("");
+        int binary = 0b00000010;
+        int octal = 034;
+        int hexadecimal = 0xA;
+        System.out.println("Число в двоичном виде " + "[" + Integer.toBinaryString(binary) + "]" + " в десятичном виде " + "[" + binary + "]");
+        System.out.println("Число в восьмеричном виде " + "[" + Integer.toOctalString(octal) + "]" + " в десятичном виде " + "[" + octal + "]");
+        System.out.println("Число в шестнадцатеричном виде " + "[" + Integer.toHexString(hexadecimal) + "]" + " в десятичном виде " + "[" + hexadecimal + "]");
+        System.out.println("");
+        // Сложение разных систем счисления
+        System.out.println("******************" + "Сложение разных систем счисления" + "******************");
+        int tmp;
+        tmp = binary + octal + hexadecimal;
+        System.out.println("Результат сложения " + tmp);
+        System.out.println("");
+        // Чтение из строки и сложение разных систем счисления
+        System.out.println("******************" + "Чтение из строки и сложение разных систем счисления" + "******************");
+        String sBin = "00000010";
+        String sOct = "34";
+        String sHex = "A";
+        int resultString;
+        resultString = Integer.parseInt(sBin, 2) + Integer.parseInt(sOct, 8) + Integer.parseInt(sHex, 16);
+        System.out.println("Результат сложения " + resultString);
 
     }
 }
