@@ -118,6 +118,14 @@ public class Main {
         int resultString;
         resultString = Integer.parseInt(sBin, 2) + Integer.parseInt(sOct, 8) + Integer.parseInt(sHex, 16);
         System.out.println("Результат сложения " + resultString);
+        System.out.println("");
 
+        // Тернарный оператор
+        System.out.println("******************" + "Тернарный оператор" + "******************");
+        final int NUMBER_STANDARD = 1000;
+        System.out.println("Сейчас переменная firstNumber " + "[" + fistNumber + "]" + " а переменная secondNumber " + "[" + secondNumber + "]");
+        String string = ((fistNumber > NUMBER_STANDARD) && (secondNumber > NUMBER_STANDARD)) ? "ALL" : ((fistNumber > NUMBER_STANDARD) || (secondNumber > NUMBER_STANDARD)) ? "ONLY ONE" : "NO";
+        System.out.println(string);
+        System.out.println("");
     }
 }
