@@ -51,6 +51,38 @@ public class Main {
         System.out.println("******************" + "Оператор ~ Побитовый переворот числа" + "******************");
         System.out.println("Сейчас переменная firstNumber " + "[" + fistNumber + "]" + " а переменная secondNumber " + "[" + secondNumber + "]");
         System.out.println("Оператор (~)  " + "[" + (~fistNumber) + "]" + "  (~) " + "[" + (~secondNumber) + "]");
+        // Приведение примитивных типов данных
+        byte b = 127;
+        short s = 32767;
+        int i = 2147483647;
+        long l = 9223372036854775807L;
+        float f = 3.4E+38f;
+        double d = 1.7E+308;
+
+        System.out.println("******************" + "Приметивные типы данных" + "******************");
+        System.out.println("Тип byte значение " + "[" + b + "]");
+        System.out.println("Тип short значение " + "[" + s + "]");
+        System.out.println("Тип int значение " + "[" + i + "]");
+        System.out.println("Тип long значение " + "[" + l + "]");
+        System.out.println("Тип float значение " + "[" + f + "]");
+        System.out.println("Тип double значение " + "[" + d + "]");
+        System.out.println("");
+
+        int i1 = b + 1;
+        System.out.println("Тип int <-- byte " + "[" + i1 + "]");
+        long l3 = b + 1;
+        System.out.println("Тип long <-- byte " + "[" + l3 + "]");
+        long l1 = s + 1;
+        System.out.println("Тип long <-- short " + "[" + l1 + "]");
+
+        float f1 = b;
+        System.out.println("Тип float <-- byte " + "[" + f1 + "]");
+        float f2 = s;
+        System.out.println("Тип float <-- short " + "[" + f2 + "]");
+        float f3 = i;
+        System.out.println("Тип float <-- int " + "[" + f3 + "]");
+        double f4 = l;
+        System.out.println("Тип double <-- long " + "[" + f4 + "]");
 
     }
 }
