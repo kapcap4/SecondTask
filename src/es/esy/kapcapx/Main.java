@@ -127,5 +127,18 @@ public class Main {
         String string = ((fistNumber > NUMBER_STANDARD) && (secondNumber > NUMBER_STANDARD)) ? "ALL" : ((fistNumber > NUMBER_STANDARD) || (secondNumber > NUMBER_STANDARD)) ? "ONLY ONE" : "NO";
         System.out.println(string);
         System.out.println("");
+
+        // Преобразование в тип Boolean
+        System.out.println("******************" + "Преобразование в тип Boolean" + "******************");
+        System.out.println("Выведет все true, так как проверяет на то, что объект не равен null и вызывает метод сравнения строк без учёта регистра");
+        String s1 = "true";
+        String s2 = "TRUE";
+        String s3 = "tRue";
+        String s4 = "True";
+        System.out.println("Передаю true результат " + "[" + Boolean.parseBoolean(s1) + "]");
+        System.out.println("Передаю TRUE результат " + "[" + Boolean.parseBoolean(s1) + "]");
+        System.out.println("Передаю tRue результат " + "[" + Boolean.parseBoolean(s1) + "]");
+        System.out.println("Передаю True результат " + "[" + Boolean.parseBoolean(s1) + "]");
+        System.out.println("");
     }
 }
