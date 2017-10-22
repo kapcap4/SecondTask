@@ -136,9 +136,9 @@ public class Main {
         String s3 = "tRue";
         String s4 = "True";
         System.out.println("Передаю true результат " + "[" + Boolean.parseBoolean(s1) + "]");
-        System.out.println("Передаю TRUE результат " + "[" + Boolean.parseBoolean(s1) + "]");
-        System.out.println("Передаю tRue результат " + "[" + Boolean.parseBoolean(s1) + "]");
-        System.out.println("Передаю True результат " + "[" + Boolean.parseBoolean(s1) + "]");
+        System.out.println("Передаю TRUE результат " + "[" + Boolean.parseBoolean(s2) + "]");
+        System.out.println("Передаю tRue результат " + "[" + Boolean.parseBoolean(s3) + "]");
+        System.out.println("Передаю True результат " + "[" + Boolean.parseBoolean(s4) + "]");
         System.out.println("");
     }
 }
